@@ -1,0 +1,154 @@
+.how {
+    position: relative;
+    background: url('/assets/img/steps__bg.png') left no-repeat;
+
+    @media (max-width: 1170px) {
+        background: url('/assets/img/steps__bg-sm.png') left no-repeat;
+    }
+
+    @media (max-width: 691px) {
+        background: url('/assets/img/steps__bg-mob.png') bottom no-repeat;
+        padding-bottom: 200px;
+    }
+}
+
+.how__benz {
+    position: absolute;
+    top: 146px;
+
+    @media (max-width: 1170px) {
+        width: 330px;
+        height: auto;
+        top: 220px;
+    }
+
+    @media (max-width: 991px) {
+        top: 190px;
+        width: 230px;
+    }
+
+    @media (max-width: 691px) {
+        display: none;
+    }
+}
+
+.how__benz-mob {
+    display: none;
+    
+    @media (max-width: 691px) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.how__inner {
+    padding: 70px 0 187px;
+
+    @media (max-width: 991px) {
+        padding: 37px 0 99px;
+    }
+
+    @media (max-width: 691px) {
+        padding: 0 0 99px;
+    }
+}
+
+.how__content {
+    width: 61%;
+    margin-left: auto;
+
+    @media (max-width: 691px) {
+        width: 100%;
+    }
+}
+
+.how__title {
+    margin-bottom: 29px;
+
+    font-family: $druk;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 62px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 14px;
+
+        font-size: 26px;
+    }
+}
+
+.how__subtitle {
+    margin-bottom: 70px;
+    max-width: 500px;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: darken(#fff, 70);
+
+    @media (max-width: 991px) {
+        margin-bottom: 40px;
+
+        font-size: 12px;
+    }
+}
+
+.steps__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+    }
+}
+
+.steps__item-icon {
+    margin-right: 44px;
+    padding: 26px;
+
+    background: #161617;
+
+    border-radius: 5px;
+
+    @media (max-width: 991px) {
+        width: 46px;
+        height: 46px;
+        margin-right: 21px;
+        padding: 13px;
+    }
+}
+
+.spets__item-icon-img {
+    @media (max-width: 991px) {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+.steps__item-title {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+}
+
+.steps__item-text {
+    max-width: 418px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: darken(#fff, 70);
+
+    @media (max-width: 991px) {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+}

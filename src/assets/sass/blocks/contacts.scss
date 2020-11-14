@@ -1,0 +1,242 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    max-height: 850px;
+    overflow: hidden;
+
+    margin-bottom: 200px;
+
+    @media (max-width: 691px) {
+        margin-bottom: 38px;
+    }
+}
+
+.contacts__map {
+    width: 51%;
+
+    @media (max-width: 691px) {
+        display: none;
+    }
+}
+
+.contacts__form {
+    width: 49%;
+    padding: 67px 95px 50px 133px;
+
+    background: #1A1A1A;
+
+    @media (max-width: 991px) {
+        padding: 36px 48px 25px 73px;
+    }
+
+    @media (max-width: 691px) {
+        padding: 36px 23px 26px;
+        width: 100%;
+    }
+}
+
+.contacts__title {
+    margin-bottom: 30px;
+
+    font-family: $druk;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 62px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+
+        font-size: 26px;
+    }
+
+    @media (max-width: 691px) {
+        font-size: 20px;
+    }
+}
+
+.contacts__subtitle {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    @media (max-width: 991px) {
+        margin-bottom: 17px;
+
+        font-size: 12px;
+    }
+}
+
+.form {
+    max-width: 370px;
+
+    @media (max-width: 991px) {
+        max-width: 197px;
+    }
+
+    @media (max-width: 691px) {
+        max-width: 100%;
+    }
+}
+
+.input__title {
+    margin-bottom: 11px;
+    
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (max-width: 991px) {
+        margin-bottom: 6px;
+
+        font-size: 8px;
+    }
+}
+
+.form__input {
+    padding: 15px 11px;
+    margin-bottom: 35px;
+    width: 370px;
+
+    border: 0;
+    border-radius: 6px;
+
+    background: #161617;
+
+    font-family: $open;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+
+    &::placeholder {
+        font-family: $open;
+        font-size: 14px;
+        font-weight: 400;
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        padding: 8px 8px 14px;
+        max-width: 197px;
+        margin-bottom: 13px;
+
+        font-size: 10px;
+
+        &::placeholder {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 691px) {
+        height: 42px;
+        max-width: 100%;
+    }
+}
+
+.textarea {
+    padding: 15px 11px;
+    margin-bottom: 41px;
+    height: 82px;
+    width: 370px;
+
+    background: #161617;
+    resize: none;
+
+    border: 0;
+    border-radius: 6px;
+
+    font-family: $open;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+
+    &::placeholder {
+        font-family: $open;
+        font-size: 14px;
+        font-weight: 400;
+        color: $white;
+    }
+
+    @media (max-width: 991px) {
+        padding: 8px 8px 14px;
+        max-width: 197px;
+        height: 60px;
+        margin-bottom: 22px;
+
+        font-size: 10px;
+
+        &::placeholder {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 691px) {
+        height: 80px;
+        max-width: 100%;
+    }
+}
+
+.contacts__form-btn {
+    margin-bottom: 93px;
+    padding: 18px 58px;
+
+    @media (max-width: 991px) {
+        padding: 7px 28px;
+        margin-bottom: 49px;
+    }
+
+    @media (max-width: 691px) {
+        display: block;
+        width: 164px;
+        margin: 0 auto 28px;
+
+        text-align: center;
+    }
+}
+
+.contacts__form-social {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 691px) {
+        justify-content: space-between;
+    }
+}
+
+.contacts__form-link {
+    margin-right: 30px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    text-decoration: none;
+
+    &--special {
+        margin-right: 100px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 991px) {
+        margin-right: 17px;
+
+        &--special {
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 691px) {
+        margin-right: 2px;
+
+        &--special {
+            margin-right: 0;
+        }
+    }
+}
+

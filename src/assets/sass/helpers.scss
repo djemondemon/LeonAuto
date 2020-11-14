@@ -1,0 +1,60 @@
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 41px;
+    margin: 0;
+    
+    border: 0;
+    border-radius: 8px;
+
+    background: $primary;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+
+    transition: .1s background linear;
+
+    cursor: pointer;
+
+    &:hover {
+        background: #c70d4e;
+    }
+
+    @media (max-width: 991px) {
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.slick-arrow {
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.slick-slide {
+    &:focus {
+        outline: none;
+    }
+}

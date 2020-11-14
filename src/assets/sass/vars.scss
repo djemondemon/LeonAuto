@@ -1,0 +1,25 @@
+/* Colors */
+$white: #fff;
+$black: #000 ;
+$primary: #F00759;
+$bgc: #E5E5E5;
+
+/* Fonts */
+$druk: 'DrukWideCyr', sans-serif;
+$open: 'Open Sans', sans-serif;
+
+// Bootstrap modal
+$modal-backdrop-bg: #000;
+$modal-backdrop-opacity: .8;
+
+// Bootstrap bg blur
+.fade {
+    backdrop-filter: blur(10px);
+}
+
+.modal-dialog {
+    max-width: none;
+    width: 100%;
+}
+
+$modal-xl: 1110px ;
