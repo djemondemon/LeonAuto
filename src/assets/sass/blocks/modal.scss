@@ -1,18 +1,9 @@
-// .modal-dialog-centered {
-//     @media (max-width: 991px) {
-//         align-items: unset;
-//     }
-// }
-
-// .modal-dialog {
-//     margin: 0;
-// }
-
 .modal__page {
     width: 100%;
     height: 100%;
 
     display: none;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
