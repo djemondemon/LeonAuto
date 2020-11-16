@@ -1,0 +1,85 @@
+[
+    {
+        "category": "hyuindai",
+        "title": "Hyundai Accent",
+        "images": [
+            {
+                "desktop": "url",
+                "mobile": "url"
+            },
+            {
+                "desktop": "url",
+                "mobile": "url"
+            },
+            {
+                "desktop": "url",
+                "mobile": "url"
+            },
+            {
+                "desktop": "url",
+                "mobile": "url"
+            },
+            {
+                "desktop": "url",
+                "mobile": "url"
+            },
+            {
+                "desktop": "url",
+                "mobile": "url"
+            }
+        ],
+        "preview": {
+            "desktop" :"assets/img/main__slider/accent.jpg",
+            "mobile" :"assets/img/main__slider/accent.jpg"
+        },
+        "price-p-hour": "13 000тг",
+        "price-p-mounth": "10 000тг",
+        "year": "2012",
+        "color": "Мокрый асфальт"
+    },
+    {
+        "category": "hyuindai",
+        "title": "Hyundai Accent 2",
+        "img": "assets/img/main__slider/accent.jpg",
+        "price-p-hour": "13 000тг",
+        "price-p-mounth": "10 000тг",
+        "year": "2013",
+        "color": "Мокрый асфальт"
+    },
+    {
+        "category": "kia",
+        "title": "Kia Optima",
+        "img": "assets/img/main__slider/kia.jpg",
+        "price-p-hour": "13 000тг",
+        "price-p-mounth": "10 000тг",
+        "year": "2012",
+        "color": "Белый"
+    },
+    {
+        "category": "kia",
+        "title": "Kia Optima 2",
+        "img": "assets/img/main__slider/kia.jpg",
+        "price-p-hour": "13 000тг",
+        "price-p-mounth": "10 000тг",
+        "year": "2013",
+        "color": "Белый"
+    },
+    {
+        "category": "Lexus",
+        "title": "Lexus 570",
+        "img": "assets/img/main__slider/lehus.jpg",
+        "price-p-hour": "13 000тг",
+        "price-p-mounth": "10 000тг",
+        "year": "2012",
+        "color": "Белый"
+    },
+    {
+        "category": "Lexus",
+        "title": "Lexus 570 2",
+        "img": "assets/img/main__slider/lehus.jpg",
+        "price-p-hour": "13 000тг",
+        "price-p-mounth": "10 000тг",
+        "year": "2013",
+        "color": "Белый"
+    }
+]

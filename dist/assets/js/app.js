@@ -3908,8 +3908,8 @@ $(function() {
     
     filterMobileSlider.slick({
         infinite: true,
-        slidesToShow: 3.7,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         arrows: false,
         dots: false
     });
@@ -3927,7 +3927,7 @@ $(function() {
             hintContent: 'Narsharab'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '../img/map-icon.png',
+            iconImageHref: 'assets/img/map-icon.svg',
             iconImageSize: [45, 41],
             iconImageOffset: [-3, -42]
         });
@@ -3953,23 +3953,22 @@ $(function() {
                 ).offset().top - 20
             }, 400);
     });
-    let filter = $("[data-filter]");
+    fetch('/cards.json').then(resp => resp.json().then(data => {
+        const categories = [ ...new Set(data.map(el => el.category))]
     
-    filter.on("click", function(event) {
+        let catHtml = `<button class="btn filter__btn" data-filter="all">Все</button>`
+    
+        catHtml += categories.map(cat => `<button class="btn filter__btn" data-filter="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</button>`).join('')
+    
+        document.getElementById('carsFilter').innerHTML = catHtml
+            
+    }))
+    $('[data-modal]').on('click', function(event) {
         event.preventDefault();
     
-        let cat = $(this).data('filter');
+        let modal = $(this).data('modal');
     
-        $("[data-cat]").each(function() {
-    
-            let workCat = $(this).data('cat');
-    
-            if(workCat != cat) {
-                $(this).addClass('hide');
-            } else {
-                $(this).removeClass('hide');
-            }
-        });
+        console.log(modal);
     });
 
 });

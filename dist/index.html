@@ -20,7 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></head>
 <body>
 
-
+<div class="page">
 
 <!-- Intro -->
 <section class="main">
@@ -212,41 +212,10 @@
             </h5>
 
             <div class="book__cat">
-                <div class="book__filter">
-                    <button class="btn filter__btn filter__btn--active" data-filter="all">
-                        Все
-                    </button>
-                    <button class="btn filter__btn" data-filter="hyundai">
-                        Hyundai
-                    </button>
-                    <button class="btn filter__btn">
-                        Toyota
-                    </button>
-                    <button class="btn filter__btn" data-filter="lexus">
-                        Lexus
-                    </button>
-                    <button class="btn filter__btn" data-filter="kia">
-                        Kia
-                    </button>
+                <div class="book__filter" id="carsFilter">
                 </div>
 
-                <div class="book__filter-mobile" id="filterMobileSlider">
-                    <button class="btn filter__btn filter__btn--active">
-                        Все
-                    </button>
-                    <button class="btn filter__btn">
-                        Hyundai
-                    </button>
-                    <button class="btn filter__btn">
-                        Toyota
-                    </button>
-                    <button class="btn filter__btn">
-                        Lexus
-                    </button>
-                    <button class="btn filter__btn">
-                        Kia
-                    </button>
-                </div>
+                
 
                 <div class="book__arrows">
                     <a href="#" class="book__arrow" id="bookArrowPrev">
@@ -258,11 +227,11 @@
                 </div>
             </div>
 
-            <div class="book__slider" id="bookSlider">
-                <div class="slider__card" data-cat="hyundai">
+            <ul class="book__slider" id="bookSlider">
+                <li class="slider__card" data-cat="hyundai">
                     <img class="img card__img" src="assets/img/main__slider/accent.jpg" alt="">
                     <h4 class="card__title">
-                        Hyundai Accent 
+                        Hyundai Accent
                     </h4>
                     <div class="card__prices">
                         <div class="card__price card__price--special">
@@ -282,12 +251,12 @@
                             <span class="card__parameter-span card__parameter-span--second">Белый</span>
                         </div>
                     </div>
-                    <a class="btn card__btn" href="#" data-toggle="modal" data-target="#requestModal">
+                    <a class="btn card__btn" href="#" data-modal="#modalPage">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="kia">
+                <li class="slider__card" data-cat="kia">
                     <img class="img card__img" src="assets/img/main__slider/optima.jpg" alt="">
                     <h4 class="card__title">
                         Kia Optima
@@ -313,9 +282,9 @@
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="lexus">
+                <li class="slider__card" data-cat="lexus">
                     <img class="img card__img" src="assets/img/main__slider/lehus.jpg" alt="">
                     <h4 class="card__title">
                         Lexus 570
@@ -341,9 +310,9 @@
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="hyundai">
+                <li class="slider__card" data-cat="hyundai">
                     <img class="img card__img" src="assets/img/main__slider/accent.jpg" alt="">
                     <h4 class="card__title">
                         Hyundai Accent 
@@ -369,9 +338,9 @@
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="kia">
+                <li class="slider__card" data-cat="kia">
                     <img class="img card__img" src="assets/img/main__slider/optima.jpg" alt="">
                     <h4 class="card__title">
                         Kia Optima
@@ -397,9 +366,9 @@
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="lexus">
+                <li class="slider__card" data-cat="lexus">
                     <img class="img card__img" src="assets/img/main__slider/lehus.jpg" alt="">
                     <h4 class="card__title">
                         Lexus 570
@@ -425,9 +394,9 @@
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
                 
-            </div>
+            </ul>
 
         </div>
     </div>
@@ -503,101 +472,99 @@
         </div>
     </div>
 </footer>
-
+</div>
 
 <!-- Modal -->
-<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-            <img src="assets/img/close.svg" alt="">
-        </button>
-        
-        <div class="modal__slider">
-            <!-- Место для слайдера -->
-            <img src="https//:placehold.it/273x7=273" alt="">
-        </div>
-
-        <div class="modal__info">
-            <h2 class="modal__title">
-                Tesla Model S 2020
-            </h2>
-
-            <div class="modal__descriptions modal__descriptions--mobile">
-                <div class="modal__description">
-                    <img class="modal__descrition-icon" src="assets/img/modal__descr-icon.svg" alt="">
-                    <span class="modal__descrition-span">2012 год</span>
-                </div>  
-                <div class="modal__description">
-                    <img class="modal__descrition-icon" src="assets/img/modal__descr-icon2.svg" alt="">
-                    <span class="modal__descrition-span">Мокрый асфальт</span>
-                </div>
-                <div class="modal__description">
-                    <img class="modal__descrition-icon" src="assets/img/modal__descr-icon3.svg" alt="">
-                    <span class="modal__descrition-span">1,6 л</span>
-                </div>
-            </div>
-
-            <p class="modal__text">
-                This four-door, five-seat saloon is the car that established Elon Musk’s California-based company as a force to be reckoned with, a company whose products deserve to stand alongside the likes of BMW
-            </p>
-
-            <div class="modal__descriptions">
-                <div class="modal__description">
-                    <img class="modal__descrition-icon" src="assets/img/modal__descr-icon.svg" alt="">
-                    <span class="modal__descrition-span">2012 год</span>
-                </div>  
-                <div class="modal__description">
-                    <img class="modal__descrition-icon" src="assets/img/modal__descr-icon2.svg" alt="">
-                    <span class="modal__descrition-span">Мокрый асфальт</span>
-                </div>
-                <div class="modal__description">
-                    <img class="modal__descrition-icon" src="assets/img/modal__descr-icon3.svg" alt="">
-                    <span class="modal__descrition-span">1,6 л</span>
-                </div>
-            </div>
-
-            <div class="modal__prices">
-                <div class="modal__prices-col">
-                    <div class="modal__prices-left">
-                        Цена в сутки
-                    </div>
-                    <div class="modal__prices-right">
-                        <span class="modal-special-span-red">13 000 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
-                    </div>
-                </div>
-                <div class="modal__prices-col">
-                    <div class="modal__prices-left">
-                        Скидка&nbsp;<span class="modal-special-span-red">10%</span>&nbsp;<span class="modal-special-span-gray">(От 7 до 10 дней)</span>
-                    </div>
-                    <div class="modal__prices-right">
-                        <span class="modal-special-span-red">11 700 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
-                    </div>
-                </div>
-                <div class="modal__prices-col">
-                    <div class="modal__prices-left">
-                        Скидка&nbsp;<span class="modal-special-span-red">20%</span>&nbsp;<span class="modal-special-span-gray">(От 10 до 20 дней)</span>
-                    </div>
-                    <div class="modal__prices-right">
-                        <span class="modal-special-span-red">10 400 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
-                    </div>
-                </div>
-                <div class="modal__prices-col">
-                    <div class="modal__prices-left">
-                        Скидка&nbsp;<span class="modal-special-span-red">25%</span>&nbsp;<span class="modal-special-span-gray">(От 20 до 30+ дней)</span>
-                    </div>
-                    <div class="modal__prices-right">
-                        <span class="modal-special-span-red">9 900 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="btn modal__btn">Забронировать</a>
-        </div>
-        
-      </div>
+<div class="modal__page" id="modalPage">
+    <div class="modal__content">
+    <button type="button" class="modal__close">
+        <img src="assets/img/close.svg" alt="">
+    </button>
+    
+    <div class="modal__slider">
+        <!-- Место для слайдера -->
+        <img src="https://via.placeholder.com/274x246" alt="">
     </div>
-  </div>
+
+    <div class="modal__info">
+        <h2 class="modal__title">
+            Tesla Model S 2020
+        </h2>
+
+        <div class="modal__descriptions modal__descriptions--mobile">
+            <div class="modal__description">
+                <img class="modal__descrition-icon" src="assets/img/modal__descr-icon.svg" alt="">
+                <span class="modal__descrition-span">2012 год</span>
+            </div>  
+            <div class="modal__description">
+                <img class="modal__descrition-icon" src="assets/img/modal__descr-icon2.svg" alt="">
+                <span class="modal__descrition-span">Мокрый асфальт</span>
+            </div>
+            <div class="modal__description">
+                <img class="modal__descrition-icon" src="assets/img/modal__descr-icon3.svg" alt="">
+                <span class="modal__descrition-span">1,6 л</span>
+            </div>
+        </div>
+
+        <p class="modal__text">
+            This four-door, five-seat saloon is the car that established Elon Musk’s California-based company as a force to be reckoned with, a company whose products deserve to stand alongside the likes of BMW
+        </p>
+
+        <div class="modal__descriptions">
+            <div class="modal__description">
+                <img class="modal__descrition-icon" src="assets/img/modal__descr-icon.svg" alt="">
+                <span class="modal__descrition-span">2012 год</span>
+            </div>  
+            <div class="modal__description">
+                <img class="modal__descrition-icon" src="assets/img/modal__descr-icon2.svg" alt="">
+                <span class="modal__descrition-span">Мокрый асфальт</span>
+            </div>
+            <div class="modal__description modal__description--last">
+                <img class="modal__descrition-icon" src="assets/img/modal__descr-icon3.svg" alt="">
+                <span class="modal__descrition-span">1,6 л</span>
+            </div>
+        </div>
+
+        <div class="modal__prices">
+            <div class="modal__prices-col">
+                <div class="modal__prices-left">
+                    Цена в сутки
+                </div>
+                <div class="modal__prices-right">
+                    <span class="modal-special-span-red">13 000 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
+                </div>
+            </div>
+            <div class="modal__prices-col">
+                <div class="modal__prices-left">
+                    Скидка&nbsp;<span class="modal-special-span-red">10%</span>&nbsp;<span class="modal-special-span-gray">(От 7 до 10 дней)</span>
+                </div>
+                <div class="modal__prices-right">
+                    <span class="modal-special-span-red">11 700 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
+                </div>
+            </div>
+            <div class="modal__prices-col">
+                <div class="modal__prices-left">
+                    Скидка&nbsp;<span class="modal-special-span-red">20%</span>&nbsp;<span class="modal-special-span-gray">(От 10 до 20 дней)</span>
+                </div>
+                <div class="modal__prices-right">
+                    <span class="modal-special-span-red">10 400 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
+                </div>
+            </div>
+            <div class="modal__prices-col">
+                <div class="modal__prices-left">
+                    Скидка&nbsp;<span class="modal-special-span-red">25%</span>&nbsp;<span class="modal-special-span-gray">(От 20 до 30+ дней)</span>
+                </div>
+                <div class="modal__prices-right">
+                    <span class="modal-special-span-red">9 900 ₸ </span><span class="modal-special-span-gray">/ сутки</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn modal__btn">Забронировать</a>
+    </div>
+    
+    </div>
+</div>
 <script src="assets/js/app.js"></script>
 
 </body>

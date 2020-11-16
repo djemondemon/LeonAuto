@@ -193,41 +193,10 @@ title: Leon Auto
             </h5>
 
             <div class="book__cat">
-                <div class="book__filter">
-                    <button class="btn filter__btn filter__btn--active" data-filter="all">
-                        Все
-                    </button>
-                    <button class="btn filter__btn" data-filter="hyundai">
-                        Hyundai
-                    </button>
-                    <button class="btn filter__btn">
-                        Toyota
-                    </button>
-                    <button class="btn filter__btn" data-filter="lexus">
-                        Lexus
-                    </button>
-                    <button class="btn filter__btn" data-filter="kia">
-                        Kia
-                    </button>
+                <div class="book__filter" id="carsFilter">
                 </div>
 
-                <div class="book__filter-mobile" id="filterMobileSlider">
-                    <button class="btn filter__btn filter__btn--active">
-                        Все
-                    </button>
-                    <button class="btn filter__btn">
-                        Hyundai
-                    </button>
-                    <button class="btn filter__btn">
-                        Toyota
-                    </button>
-                    <button class="btn filter__btn">
-                        Lexus
-                    </button>
-                    <button class="btn filter__btn">
-                        Kia
-                    </button>
-                </div>
+                
 
                 <div class="book__arrows">
                     <a href="#" class="book__arrow" id="bookArrowPrev">
@@ -239,11 +208,11 @@ title: Leon Auto
                 </div>
             </div>
 
-            <div class="book__slider" id="bookSlider">
-                <div class="slider__card" data-cat="hyundai">
+            <ul class="book__slider" id="bookSlider">
+                <li class="slider__card" data-cat="hyundai">
                     <img class="img card__img" src="assets/img/main__slider/accent.jpg" alt="">
                     <h4 class="card__title">
-                        Hyundai Accent 
+                        Hyundai Accent
                     </h4>
                     <div class="card__prices">
                         <div class="card__price card__price--special">
@@ -263,12 +232,12 @@ title: Leon Auto
                             <span class="card__parameter-span card__parameter-span--second">Белый</span>
                         </div>
                     </div>
-                    <a class="btn card__btn" href="#" data-toggle="modal" data-target="#requestModal">
+                    <a class="btn card__btn" href="#" data-modal="#modalPage">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="kia">
+                <li class="slider__card" data-cat="kia">
                     <img class="img card__img" src="assets/img/main__slider/optima.jpg" alt="">
                     <h4 class="card__title">
                         Kia Optima
@@ -294,9 +263,9 @@ title: Leon Auto
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="lexus">
+                <li class="slider__card" data-cat="lexus">
                     <img class="img card__img" src="assets/img/main__slider/lehus.jpg" alt="">
                     <h4 class="card__title">
                         Lexus 570
@@ -322,9 +291,9 @@ title: Leon Auto
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="hyundai">
+                <li class="slider__card" data-cat="hyundai">
                     <img class="img card__img" src="assets/img/main__slider/accent.jpg" alt="">
                     <h4 class="card__title">
                         Hyundai Accent 
@@ -350,9 +319,9 @@ title: Leon Auto
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="kia">
+                <li class="slider__card" data-cat="kia">
                     <img class="img card__img" src="assets/img/main__slider/optima.jpg" alt="">
                     <h4 class="card__title">
                         Kia Optima
@@ -378,9 +347,9 @@ title: Leon Auto
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
 
-                <div class="slider__card" data-cat="lexus">
+                <li class="slider__card" data-cat="lexus">
                     <img class="img card__img" src="assets/img/main__slider/lehus.jpg" alt="">
                     <h4 class="card__title">
                         Lexus 570
@@ -406,9 +375,9 @@ title: Leon Auto
                     <a class="btn card__btn" href="#">
                         Забронировать
                     </a>
-                </div>
+                </li>
                 
-            </div>
+            </ul>
 
         </div>
     </div>

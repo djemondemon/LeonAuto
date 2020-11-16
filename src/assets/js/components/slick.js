@@ -61,8 +61,8 @@ let filterMobileSlider = $("#filterMobileSlider");
 
 filterMobileSlider.slick({
     infinite: true,
-    slidesToShow: 3.7,
-    slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     arrows: false,
     dots: false
 });

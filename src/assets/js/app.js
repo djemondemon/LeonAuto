@@ -8,5 +8,6 @@ $(function() {
     //= components/map.js
     //= components/nav.js
     //= components/filter.js
+    //= components/modal.js
 
 });

@@ -1,18 +1,10 @@
-let filter = $("[data-filter]");
+fetch('/cards.json').then(resp => resp.json().then(data => {
+    const categories = [ ...new Set(data.map(el => el.category))]
 
-filter.on("click", function(event) {
-    event.preventDefault();
+    let catHtml = `<button class="btn filter__btn" data-filter="all">Все</button>`
 
-    let cat = $(this).data('filter');
+    catHtml += categories.map(cat => `<button class="btn filter__btn" data-filter="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</button>`).join('')
 
-    $("[data-cat]").each(function() {
-
-        let workCat = $(this).data('cat');
-
-        if(workCat != cat) {
-            $(this).addClass('hide');
-        } else {
-            $(this).removeClass('hide');
-        }
-    });
-});
+    document.getElementById('carsFilter').innerHTML = catHtml
+        
+}))

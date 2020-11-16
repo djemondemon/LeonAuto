@@ -12,7 +12,7 @@ ymaps.ready(function () {
         hintContent: 'Narsharab'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map-icon.png',
+        iconImageHref: 'assets/img/map-icon.svg',
         iconImageSize: [45, 41],
         iconImageOffset: [-3, -42]
     });

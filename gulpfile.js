@@ -20,25 +20,28 @@ const browsersync = require("browser-sync").create();
 /* Paths */
 var path = {
     build: {
-        html: "dist/",
         js: "dist/assets/js/",
         css: "dist/assets/css/",
         fonts: "dist/assets/fonts",
-        images: "dist/assets/img/"
+        images: "dist/assets/img/",
+        html: "dist/",
+        json: "dist/"
     },
     src: {
-        html: "src/*.html",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         fonts: "src/assets/fonts/*.{woff,woff2,ttf}",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+        html: "src/*.html",
+        json: "src/cards.json"
     },
     watch: {
-        html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         fonts: "src/assets/fonts/*.{woff,woff2,ttf}",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+        html: "src/**/*.html",
+        json: "src/cards.json"
     },
     clean: "./dist"
 }
@@ -125,6 +128,12 @@ function images() {
         .pipe(dest(path.build.images));
 }
 
+
+function json() {
+    return src(path.src.json)
+        .pipe(dest(path.build.json));
+}
+
 function clean() {
     return del(path.clean);
 }
@@ -135,9 +144,10 @@ function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.fonts], fonts);
     gulp.watch([path.watch.images], images);
+    gulp.watch([path.watch.json], json);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, fonts, images));
+const build = gulp.series(clean, gulp.parallel(html, css, js, fonts, images, json));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -148,6 +158,7 @@ exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
+exports.json = json;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;

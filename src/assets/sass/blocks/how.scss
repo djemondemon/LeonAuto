@@ -77,6 +77,12 @@
 
         font-size: 26px;
     }
+
+    @media (max-width: 691px) {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.2;
+    }
 }
 
 .how__subtitle {
@@ -85,12 +91,17 @@
 
     font-size: 16px;
     font-weight: 400;
-    color: darken(#fff, 70);
+    color: darken(#fff, 50);
 
     @media (max-width: 991px) {
         margin-bottom: 40px;
 
         font-size: 12px;
+    }
+
+    @media (max-width: 691px) {
+        text-align: center;
+        line-height: 1.1;
     }
 }
 
@@ -145,7 +156,7 @@
 
     font-size: 14px;
     font-weight: 400;
-    color: darken(#fff, 70);
+    color: darken(#fff, 50);
 
     @media (max-width: 991px) {
         font-size: 12px;
