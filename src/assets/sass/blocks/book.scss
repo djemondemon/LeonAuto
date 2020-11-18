@@ -112,6 +112,7 @@
     background: #161617;
 
     transition: background .1s linear;
+    transition: color .1s linear;
     border-radius: 2.60px;
 
     &:last-child {
@@ -119,7 +120,14 @@
     }
 
     &:hover {
-        background: $primary;
+        background: $white;
+        color: #050506;
+        box-shadow: none;
+    }
+
+    &:active {
+        color: #050506;
+        background: #BEBEBE;
     }
 
     &--active {
@@ -167,7 +175,11 @@
     }
 
     &:hover {
-        background: #262627;
+        background: #F00759;
+    }
+
+    &:active {
+        background: #890534;
     }
 
     @media (max-width: 991px) {

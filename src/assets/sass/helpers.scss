@@ -23,12 +23,17 @@
     color: $white;
     text-decoration: none;
 
-    transition: .1s background linear;
+    transition: .1s box-shadow linear;
 
     cursor: pointer;
 
     &:hover {
-        background: #c70d4e;
+        box-shadow: 0px 24px 32px rgba(240, 7, 89, 0.16), 0px 16px 24px rgba(240, 7, 89, 0.12), 0px 2px 6px rgba(240, 7, 89, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.06);
+    }
+
+    &:active {
+        background: #890534;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.06);
     }
 
     @media (max-width: 991px) {
